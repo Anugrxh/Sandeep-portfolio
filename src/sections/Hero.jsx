@@ -5,13 +5,21 @@ const Hero = ({ scrollToSection }) => {
   return (
     <section
       id="home"
-      className="relative h-screen flex items-center justify-center text-center bg-cover bg-center bg-fixed"
-      style={{
-        backgroundImage: `url(${sandeepImage})`,
-      }}
+      className="relative h-screen flex items-center justify-center text-center overflow-hidden" 
     >
-      <div className="absolute inset-0 bg-black opacity-70"></div>
-      <div className="relative z-10 p-8 max-w-4xl mx-auto">
+     
+      {/* This is the key change for iOS compatibility */}
+      <img
+        src={sandeepImage}
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover z-0" 
+      />
+
+     
+      <div className="absolute inset-0 bg-black opacity-70 z-10"></div>
+
+      {/* Content of the Hero Section */}
+      <div className="relative z-20 p-8 max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-4 animate-fade-in-up">
           Transform Yourself
         </h1>
