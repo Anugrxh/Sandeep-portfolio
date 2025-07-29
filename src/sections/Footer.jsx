@@ -63,7 +63,7 @@ const Footer = () => {
               className="group"
               aria-label="Instagram"
             >
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 via-red-500 to-yellow-500 text-white text-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 via-red to-yellow-500 text-white text-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
                 <FontAwesomeIcon icon={faInstagram} />
               </div>
             </a>
@@ -76,7 +76,7 @@ const Footer = () => {
               className="group"
               aria-label="WhatsApp"
             >
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-green-500 text-white text-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-green text-white text-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
                 <FontAwesomeIcon icon={faWhatsapp} />
               </div>
             </a>
@@ -87,7 +87,7 @@ const Footer = () => {
               className="group"
               aria-label="Email"
             >
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500 text-white text-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-blue text-white text-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
                 <FontAwesomeIcon icon={faEnvelope} />
               </div>
             </a>
