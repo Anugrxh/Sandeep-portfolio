@@ -46,7 +46,7 @@ const Footer = () => {
           <p className="mb-1">
             © {new Date().getFullYear()} Sandeep Balakrishnan Fitness. All rights reserved.
           </p>
-          <p>Developed By Anugrah M V</p>
+          <p>Site Developed By Anugrah M V</p>
         </div>
 
         {/* Right Section: Social Media Links */}
@@ -57,7 +57,7 @@ const Footer = () => {
           <div className="flex flex-row space-x-4 md:flex-col md:space-y-4 md:space-x-0">
             {/* Instagram */}
             <a
-              href="https://www.instagram.com/your_instagram_page"
+              href="https://www.instagram.com/sandeep_balakrishnan/"
               target="_blank"
               rel="noopener noreferrer"
               className="group"
@@ -70,7 +70,7 @@ const Footer = () => {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/971501234567"
+              href="https://wa.me/9061855859"
               target="_blank"
               rel="noopener noreferrer"
               className="group"
@@ -83,7 +83,7 @@ const Footer = () => {
 
             {/* Email */}
             <a
-              href="mailto:info@sandeepfitness.com"
+              href="mailto:sandeepmv283@gmail.com"
               className="group"
               aria-label="Email"
             >

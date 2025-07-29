@@ -1,25 +1,29 @@
 import React from "react";
+import workoutVideo1 from '../assets/workout_v1.mp4';
+import workoutVideo2 from '../assets/workout_v2.mp4';
+import workoutVideo3 from '../assets/workout_v3.mp4';
+import workoutVideo4 from '../assets/workout_v4.mp4';
 
-// If you're using local video files, import them like this:
-// import workoutVideo1 from '../assets/videos/workout1.mp4';
-// import workoutVideo2 from '../assets/videos/workout2.mp4';
-// import workoutVideo3 from '../assets/videos/workout3.mp4';
-// import workoutVideo4 from '../assets/videos/workout4.mp4';
+import workoutImage1 from '../assets/workout_p1.jpg';
+import workoutImage2 from '../assets/workout_p2.jpg';
+import workoutImage3 from '../assets/workout_p3.jpg';
+import workoutImage4 from '../assets/workout_p4.jpg';
+
+
 
 const WorkoutGallery = ({ isVisible }) => {
   const media = [
-    { type: "image", src: "https://placehold.co/400x300/1f2937/a3e635?text=Workout+1" },
-     { type: "video", src: "https://www.w3schools.com/html/mov_bbb.mp4" },
-    { type: "image", src: "https://placehold.co/400x300/1f2937/a3e635?text=Workout+2" },
-    { type: "video", src: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" },
-    { type: "image", src: "https://placehold.co/400x300/1f2937/a3e635?text=Workout+3" },
-    { type: "video", src: "https://www.w3schools.com/html/mov_bbb.mp4" },
-    { type: "image", src: "https://placehold.co/400x300/1f2937/a3e635?text=Workout+4" },
-    { type: "video", src: "https://test-videos.co.uk/vids/bigbuckbunny/mp4/720/big_buck_bunny_720p_1mb.mp4" },
+    { type: "image", src: workoutImage1 },
+     { type: "video", src: workoutVideo1 },
+    { type: "image", src: workoutImage2 },
+    { type: "video", src: workoutVideo2 },
+    { type: "image", src: workoutImage3 },
+    { type: "video", src: workoutVideo3 },
+    { type: "image", src: workoutImage4 },
+    { type: "video", src: workoutVideo4 },
   ];
 
-  // Define a consistent height for your media items.
-  // You can adjust 'h-64' (256px) to your preferred height.
+  
   const mediaHeightClass = "h-64";
 
   return (
