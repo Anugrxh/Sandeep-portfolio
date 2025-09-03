@@ -20,7 +20,18 @@ const Services = ({ isVisible }) => {
       description:
         "Regular assessments and detailed progress tracking to keep you motivated and on the right path.",
     },
-    
+    {
+      icon: "💻",
+      title: "Online Classes",
+      description:
+        "Join interactive online sessions from the comfort of your home, bringing professional coaching directly to you.",
+    },
+    {
+      icon: "👥",
+      title: "Group Classes",
+      description:
+        "Train together in a motivating group environment while still receiving expert guidance and structured plans.",
+    },
   ];
 
   return (
@@ -34,8 +45,10 @@ const Services = ({ isVisible }) => {
         <h2 className="text-4xl font-bold text-lime-400 mb-12 animate-fade-in-up">
           My Services
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {serviceItems.map((service, index) => (
+
+        {/* First Row (3 services) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+          {serviceItems.slice(0, 3).map((service, index) => (
             <div
               key={index}
               className={`p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300 group ${
@@ -43,10 +56,39 @@ const Services = ({ isVisible }) => {
               }`}
               style={{
                 animationDelay: `${index * 0.1}s`,
-                backgroundColor: "rgba(255, 255, 255, 0.08)", // Slightly more transparent white
-                backdropFilter: "blur(8px)", // Glass blur effect
-                WebkitBackdropFilter: "blur(8px)", // For Safari support
-                border: "1px solid rgba(255, 255, 255, 0.15)", // Subtle border for definition
+                backgroundColor: "rgba(255, 255, 255, 0.08)",
+                backdropFilter: "blur(8px)",
+                WebkitBackdropFilter: "blur(8px)",
+                border: "1px solid rgba(255, 255, 255, 0.15)",
+              }}
+            >
+              <div className="text-5xl text-lime-400 mb-6 group-hover:text-lime-300 transition-colors duration-300">
+                {service.icon}
+              </div>
+              <h3 className="text-2xl font-semibold text-white mb-4">
+                {service.title}
+              </h3>
+              <p className="text-gray-200 leading-relaxed">
+                {service.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Second Row (2 services spanning 3 cols) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          {serviceItems.slice(3).map((service, index) => (
+            <div
+              key={index + 3}
+              className={`p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300 group md:col-span-3 lg:col-span-3 ${
+                isVisible ? "animate-fade-in-up" : ""
+              }`}
+              style={{
+                animationDelay: `${(index + 3) * 0.1}s`,
+                backgroundColor: "rgba(255, 255, 255, 0.08)",
+                backdropFilter: "blur(8px)",
+                WebkitBackdropFilter: "blur(8px)",
+                border: "1px solid rgba(255, 255, 255, 0.15)",
               }}
             >
               <div className="text-5xl text-lime-400 mb-6 group-hover:text-lime-300 transition-colors duration-300">

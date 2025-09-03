@@ -31,7 +31,7 @@ const About = ({ isVisible }) => {
             As a fitness professional and Personal Trainer, I bring 10+ years of rich experience
             from reputed Gym and Fitness centers in Dubai, UAE, and Kerala, India.
             My qualifications include a Diploma in Level 2 and 3 Personal Training,
-            Emergency First Aid, Defibrillation & CPR – Level 2 Certification, and a B.Com degree.
+            Emergency First Aid, Defibrillation & CPR – Level 2 Certification,TRX Suspension Training Certification and a B.Com degree.
           </p>
           <p className="text-lg text-gray-300 leading-relaxed animate-fade-in-up delay-300">
             My approach is holistic, focusing not just on physical
