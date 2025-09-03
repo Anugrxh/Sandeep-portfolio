@@ -23,10 +23,10 @@ const Contact = ({ isVisible }) => {
 
     emailjs
       .send(
-        "service_9pmazcl", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        "service_0lnau1h", // Replace with your EmailJS service ID
+        "template_re28fk6", // Replace with your EmailJS template ID
         formData,
-        "YOUR_USER_ID" // Replace with your EmailJS user/public key
+        "NQqWqQzSvkjXMnsd_" // Replace with your EmailJS user/public key
       )
       .then(
         (response) => {
