@@ -6,6 +6,7 @@ import diplomaImage from '../assets/diploma.jpg'; // Example path
 import firstAidImage from '../assets/fid.PNG'; // Example path
 import fitnessExtremeLogo from '../assets/fitness_extream.png'; // Example path
 import powersLogo from '../assets/powers.png'; // Example path
+import trx from '../assets/trx.png'; // Example path
 // import anyOtherCertImage from '../assets/your-cert-image.jpg'; // Add more as needed
 
 const Experience = ({ isVisible }) => {
@@ -22,6 +23,13 @@ const Experience = ({ isVisible }) => {
       description:
         "ADEPT Training Institute LLC, 2020",
       image: firstAidImage, 
+      type: "summary",
+    },
+    {
+      title: "TRX Suspension Training(English) Certification",
+      description:
+        "By TRX Training,Nov 23 2021",
+      image: trx, 
       type: "summary",
     },
     {

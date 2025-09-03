@@ -35,7 +35,7 @@ const Footer = () => {
             <p>
               <span className="font-semibold">Email:</span>{" "}
               <a href="mailto:info@sandeepfitness.com" className="hover:text-lime-400 transition-colors duration-200">
-                info@sandeepfitness.com
+                sandeepmv283@gmail.com
               </a>
             </p>
           </div>
@@ -46,7 +46,7 @@ const Footer = () => {
           <p className="mb-1">
             © {new Date().getFullYear()} Sandeep Balakrishnan Fitness. All rights reserved.
           </p>
-          <p>Site Developed By Anugrah M V</p>
+          <p><a href="https://anugrah-m-v.netlify.app/">Developed By Anugrah M V</a></p>
         </div>
 
         {/* Right Section: Social Media Links */}

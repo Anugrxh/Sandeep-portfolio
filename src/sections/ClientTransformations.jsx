@@ -1,24 +1,26 @@
 import React from "react";
+import devis2 from '../assets/devis2.jpg';
+import priyanka from '../assets/priyanka.jpg';
+import shafeek from '../assets/shafeek.jpg';
+import kannan from '../assets/kannan.jpg';
 
 const ClientTransformations = ({ isVisible }) => {
   const clients = [
     {
-      before:
-        "https://placehold.co/300x400/1f2937/a3e635?text=Client+Before+1",
-      after: "https://placehold.co/300x400/a3e635/1f2937?text=Client+After+1",
-      name: "Client A",
+      image: devis2,
+      name: "Devis",
     },
     {
-      before:
-        "https://placehold.co/300x400/1f2937/a3e635?text=Client+Before+2",
-      after: "https://placehold.co/300x400/a3e635/1f2937?text=Client+After+2",
-      name: "Client B",
+      image: priyanka,
+      name: "Priyanka",
     },
     {
-      before:
-        "https://placehold.co/300x400/1f2937/a3e635?text=Client+Before+3",
-      after: "https://placehold.co/300x400/a3e635/1f2937?text=Client+After+3",
-      name: "Client C",
+      image: shafeek,
+      name: "Shafeek",
+    },
+    {
+      image: kannan,
+      name: "Kannan",
     },
   ];
 
@@ -33,7 +35,7 @@ const ClientTransformations = ({ isVisible }) => {
         <h2 className="text-4xl font-bold text-lime-400 mb-12 animate-fade-in-up">
           Client Success Stories
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {clients.map((client, index) => (
             <div
               key={index}
@@ -42,22 +44,17 @@ const ClientTransformations = ({ isVisible }) => {
               }`}
               style={{
                 animationDelay: `${index * 0.1}s`,
-                backgroundColor: "rgba(255, 255, 255, 0.08)", // Slightly more transparent white
-                backdropFilter: "blur(8px)", // Glass blur effect
-                WebkitBackdropFilter: "blur(8px)", // For Safari support
-                border: "1px solid rgba(255, 255, 255, 0.15)", // Subtle border for definition
+                backgroundColor: "rgba(255, 255, 255, 0.08)",
+                backdropFilter: "blur(8px)",
+                WebkitBackdropFilter: "blur(8px)",
+                border: "1px solid rgba(255, 255, 255, 0.15)",
               }}
             >
-              <div className="flex justify-around items-center mb-4">
+              <div className="flex justify-center items-center mb-4">
                 <img
-                  src={client.before}
-                  alt={`${client.name} Before`}
-                  className="w-1/2 h-auto rounded-lg mr-2"
-                />
-                <img
-                  src={client.after}
-                  alt={`${client.name} After`}
-                  className="w-1/2 h-auto rounded-lg ml-2"
+                  src={client.image}
+                  alt={client.name}
+                  className="w-3/4 h-auto rounded-lg"
                 />
               </div>
               <p className="font-semibold text-white">{client.name}</p>
