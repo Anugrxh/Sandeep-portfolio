@@ -21,17 +21,12 @@ const Footer = () => {
           {/* Contact Information */}
           <div className="text-center md:text-left">
             <p className="mb-1">
-              <span className="font-semibold">Dubai:</span>{" "}
-              <a href="tel:+971501234567" className="hover:text-lime-400 transition-colors duration-200">
-                +971 50 123 4567
+              <span className="font-semibold">Mobile:</span>{" "}
+              <a href="tel:+919061855859" className="hover:text-lime-400 transition-colors duration-200">
+                +91 9061855859
               </a>
             </p>
-            <p className="mb-1">
-              <span className="font-semibold">India:</span>{" "}
-              <a href="tel:+919876543210" className="hover:text-lime-400 transition-colors duration-200">
-                +91 98765 43210
-              </a>
-            </p>
+            
             <p>
               <span className="font-semibold">Email:</span>{" "}
               <a href="mailto:info@sandeepfitness.com" className="hover:text-lime-400 transition-colors duration-200">

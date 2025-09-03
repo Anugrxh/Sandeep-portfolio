@@ -36,7 +36,7 @@ const Experience = ({ isVisible }) => {
       title: "Personal Trainer",
       company: "Fitness Extreme",
       location: "Dubai, UAE",
-      dates: "May 2017 - Present",
+      dates: "May 2017 - 2022",
       logo: fitnessExtremeLogo,
       type: "work",
     },

@@ -68,10 +68,10 @@ const Contact = ({ isVisible }) => {
             <p>
               Phone:{" "}
               <a
-                href="tel:+971582113364 "
+                href="tel:+919061855859 "
                 className="text-lime-400 hover:underline"
               >
-                +971582113364 
+                +91 9061855859 
               </a>
             </p>
           </div>

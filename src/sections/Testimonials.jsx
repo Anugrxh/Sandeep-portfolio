@@ -1,21 +1,23 @@
 import React from "react";
 
+// Import your 5 local video files
+import video1 from "../assets/c1.mp4";
+import video2 from "../assets/c2.mp4";
+import video3 from "../assets/c3.mp4";
+import video4 from "../assets/c4.mp4";
+import video5 from "../assets/c5.mp4";
+import video6 from "../assets/c7.mp4";
+
+
+
 const Testimonials = ({ isVisible }) => {
   const testimonials = [
-    {
-      type: "video", // First testimonial is a video
-      src: "https://www.w3schools.com/html/mov_bbb.mp4", // <--- REPLACE WITH YOUR VIDEO FILE PATH
-      author: "Jane Doe, Weight Loss Client",
-      caption: "Jane's amazing transformation story!",
-    },
-    {
-      type: "video", // Second testimonial is a video
-      src: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4", // <--- REPLACE WITH YOUR VIDEO FILE PATH
-      author: "John Smith, Strength Training Client",
-      caption: "John talks about crushing his strength goals!",
-    },
-    
-    
+    { src: video1 },
+    { src: video2 },
+    { src: video3 },
+    { src: video4 },
+    { src: video5 },
+    { src: video6 },
   ];
 
   return (
@@ -26,65 +28,29 @@ const Testimonials = ({ isVisible }) => {
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 text-center">
-        <h2 className="text-4xl font-bold text-lime-400 mb-12 animate-fade-in-up">
-          What Clients Say
+        <h2 className="text-3xl md:text-4xl font-bold text-lime-400 mb-12 animate-fade-in-up">
+          Client Video Testimonials
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className={`rounded-xl shadow-xl border border-gray-700 hover:border-lime-500 transition-all duration-300 flex flex-col justify-between ${
+              className={`bg-gray-900 rounded-xl shadow-lg p-4 transition-transform duration-300 hover:scale-105 mx-auto ${
                 isVisible ? "animate-fade-in-up" : ""
               }`}
-              style={{
-                backgroundColor: "rgba(255, 255, 255, 0.08)",
-                backdropFilter: "blur(8px)",
-                WebkitBackdropFilter: "blur(8px)",
-                border: "1px solid rgba(255, 255, 255, 0.15)",
-                animationDelay: `${index * 0.1}s`,
-              }}
+              style={{ animationDelay: `${index * 0.1}s`, maxWidth: "350px", width: "100%" }}
             >
-              {testimonial.type === "text" ? (
-                // Text Testimonial Content
-                <div className="p-8 flex flex-col justify-between h-full"> {/* Added h-full for consistent height */}
-                  <p className="text-lg italic text-gray-300 mb-6">
-                    "{testimonial.quote}"
-                  </p>
-                  <p className="font-semibold text-white">
-                    - {testimonial.author}
-                  </p>
-                </div>
-              ) : (
-                // Video Testimonial Content (with author name)
-                <div className="p-4 flex flex-col items-center justify-center">
-                  {/* Wrapper for consistent video aspect ratio */}
-                  <div className="w-full relative pt-[56.25%] rounded-lg overflow-hidden mb-4">
-                    {/* pt-[56.25%] creates a 16:9 aspect ratio (9 / 16 * 100 = 56.25) */}
-                    {/* You can change this value for a different aspect ratio, e.g., pt-[75%] for 4:3, or pt-[100%] for 1:1 (square) */}
-                    <video
-                      controls
-                      muted
-                      autoPlay 
-                      loop
-                      preload="metadata"
-                      className="absolute top-0 left-0 w-full h-full object-cover" // Video fills the aspect ratio container
-                      aria-label={testimonial.caption || `Client testimonial from ${testimonial.author}`}
-                    >
-                      <source src={testimonial.src} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  {testimonial.caption && (
-                    <p className="text-sm text-gray-400 text-center mb-2">
-                      {testimonial.caption}
-                    </p>
-                  )}
-                  {/* Client Name for Video Testimonial */}
-                  <p className="font-semibold text-white text-center">
-                    - {testimonial.author}
-                  </p>
-                </div>
-              )}
+              <video
+                controls
+                muted
+                preload="metadata"
+                className="rounded-lg object-cover w-full"
+                style={{ aspectRatio: "9 / 16" }}
+                src={testimonial.src}
+                aria-label={`Client testimonial video ${index + 1}`}
+              >
+                Your browser does not support the video tag.
+              </video>
             </div>
           ))}
         </div>
