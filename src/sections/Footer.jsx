@@ -29,8 +29,10 @@ const Footer = () => {
             
             <p>
               <span className="font-semibold">Email:</span>{" "}
-              <a href="mailto:info@sandeepfitness.com" className="hover:text-lime-400 transition-colors duration-200">
-                sandeepmv283@gmail.com
+              <a href="mailto:sandeepbalakrishnanfitness@gmail.com
+" className="hover:text-lime-400 transition-colors duration-200">
+                sandeepbalakrishnanfitness@gmail.com
+
               </a>
             </p>
           </div>
@@ -78,7 +80,8 @@ const Footer = () => {
 
             {/* Email */}
             <a
-              href="mailto:sandeepmv283@gmail.com"
+              href="mailto:sandeepbalakrishnanfitness@gmail.com
+"
               className="group"
               aria-label="Email"
             >

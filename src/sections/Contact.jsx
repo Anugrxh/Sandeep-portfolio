@@ -109,10 +109,12 @@ const Contact = ({ isVisible }) => {
             <p>
               Email:{" "}
               <a
-                href="mailto:sandeepmv283@gmail.com"
+                href="mailto:sandeepbalakrishnanfitness@gmail.com
+"
                 className="text-lime-400 hover:underline"
               >
-                sandeepmv283@gmail.com
+                sandeepbalakrishnanfitness@gmail.com
+
               </a>
             </p>
             <p>
