@@ -171,7 +171,7 @@ return (
 
 {/* Navigation Bar */}
 
-<nav className="fixed w-full z-50 bg-white/10 backdrop-blur-2xl  shadow-lg py-4 px-6 md:px-12 flex justify-between items-center">
+<nav className="fixed w-full z-50 bg-black/10 backdrop-blur-2xl  shadow-lg py-4 px-6 md:px-12 flex justify-between items-center">
 
 
 
