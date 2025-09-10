@@ -111,7 +111,7 @@ const Contact = ({ isVisible }) => {
               <a
                 href="mailto:sandeepbalakrishnanfitness@gmail.com
 "
-                className="text-lime-400 hover:underline"
+                className="text-lime-400 hover:underline break-words"
               >
                 sandeepbalakrishnanfitness@gmail.com
 
