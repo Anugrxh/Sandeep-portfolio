@@ -3,8 +3,8 @@ import React from "react";
 // Import your 5 local video files
 import video1 from "../assets/c1.mp4";
 import video2 from "../assets/c2.mp4";
-import video3 from "../assets/c3.mp4";
-import video4 from "../assets/c4.mp4";
+import video3 from "../assets/33.mp4";
+import video4 from "../assets/c44.mp4";
 import video5 from "../assets/c5.mp4";
 import video6 from "../assets/c7.mp4";
 
