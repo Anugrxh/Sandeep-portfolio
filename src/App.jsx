@@ -171,7 +171,9 @@ return (
 
 {/* Navigation Bar */}
 
-<nav className="fixed w-full z-50 bg-black bg-opacity-10 shadow-lg py-4 px-6 md:px-12 flex justify-between items-center backdrop-blur-sm">
+<nav className="fixed w-full z-50 bg-white/10 backdrop-blur-2xl  shadow-lg py-4 px-6 md:px-12 flex justify-between items-center">
+
+
 
 <div className="text-2xl font-bold text-lime-400">
 

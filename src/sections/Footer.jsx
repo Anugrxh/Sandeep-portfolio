@@ -60,9 +60,10 @@ const Footer = () => {
               className="group"
               aria-label="Instagram"
             >
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 via-red to-yellow-500 text-white text-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
-                <FontAwesomeIcon icon={faInstagram} />
-              </div>
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-black text-white text-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
+  <FontAwesomeIcon icon={faInstagram} />
+</div>
+
             </a>
 
             {/* WhatsApp */}
